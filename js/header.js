@@ -1,0 +1,15 @@
+document.writeln("<div class=\'header\' id=\'header\'>");
+document.writeln("  <div class=\'topLogo pubW center clearfix relative\'>");
+document.writeln("    <h1><a class=\'btn1\' href=\'/\' title=\'上海华美医疗美容医院\'></a><a class=\'btn2\'></a><a class=\'btn3\'></a></h1>");
+document.writeln("    <div class=\'topNav fr clearfix\'>");
+document.writeln("      <ul>");
+document.writeln("        <li><a href=\'/\' target=\'_blank\' title=\'首页\'>首页</a></li>");
+document.writeln("        <li><a href=\'/pinpai_new/about.html\' target=\'_blank\' title=\'秀琪品牌\'>秀琪品牌</a></li>");
+document.writeln("        <li><a href=\'/pinpai_new/\' target=\'_blank\' title=\'塑美团队\'>塑美团队</a></li>");
+document.writeln("        <li><a href=\'/anli_new/effect/\' target=\'_blank\' title=\'案例中心\'>案例中心</a></li>");
+document.writeln("        <li><a href=\'/pinpai_new/hmbono/\' target=\'_blank\' title=\'精彩专题\'>精彩专题</a></li>");
+document.writeln("        <li><a href=\'/nszx/\' target=\'_blank\' title=\'鹏爱公益\'>鹏爱公益</a></li>");
+document.writeln("      </ul>");
+document.writeln("    </div>");
+document.writeln("  </div>");
+document.writeln("</div>");

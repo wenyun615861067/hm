@@ -1,0 +1,18 @@
+document.writeln(" <div class=\'itemright_link fonts\'>");
+document.writeln("         	<a class=\'itemRswt itemani\' href=\'javascript:void(0);\' onClick=\'openZoosUrl();return false;\'>");
+document.writeln("         		<i class=\'iBlock iconItem\'></i>");
+document.writeln("         		<em>在线咨询</em>");
+document.writeln("         	</a>");
+document.writeln("         	<a class=\'itemRyue itemani\' href=\'javascript:void(0);\' onClick=\'openZoosUrl();return false;\'>");
+document.writeln("         		<i class=\'iBlock iconItem\'></i>");
+document.writeln("         		<em>预约医生</em>");
+document.writeln("         	</a>");
+document.writeln("         	<a class=\'itemRtrue itemani\' href=\'/pinpai_new/about.html\'>");
+document.writeln("         		<i class=\'iBlock iconItem\'></i>");
+document.writeln("         		<em>关于华美</em>");
+document.writeln("         	</a>");
+document.writeln("         	<a class=\'itemRlylx itemani\' href=\'/pinpai_new/maps.html\'>");
+document.writeln("         		<i class=\'iBlock iconItem\'></i>");
+document.writeln("         		<em>来院路线</em>");
+document.writeln("         	</a>");
+document.writeln("         </div>");

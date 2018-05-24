@@ -1,0 +1,31 @@
+
+@charset "utf-8";
+/* CSS Document */
+/*华美对比*/
+.contrastBanner, .contrastBanner .bannerSlide { height: 322px; }
+.contrastBanner .bannerSlide li img { -moz-transform: none; -ms-transform: none; -o-transform: none; -webkit-transform: none; transform: none; }
+/*------右侧内容---------*/
+.contentRight { width: 880px; }
+/*------当前位置---------*/
+.contentRight .item { position: absolute; top: -25px; left: -8px; font-size: 12px; color: #e1e1e1; }
+.contentRight .item a { color: #e1e1e1 }
+.contentRight .item a:last-child { color: #fff; }
+/*------导航栏---------*/
+.contentRight .anliTitle { width: 100%; height: 170px; background: url("../images/title.jpg")no-repeat 655px 30px; }
+.contentRight .anliTitle h3 { width: 665px; font-size: 32px; color: #3d3f4b; border-bottom: 1px solid #e1e1e1; padding-top: 40px; line-height: 52px; }
+.contentRight .anliTitle p { font-size: 16px; color: #666; line-height: 38px; }
+/*------即刻效果案例---------*/
+.effectCon { width: 927px; position: relative; overflow:hidden; }
+.eList { width: 262px; margin-right: 47px; float: left; height: 328px; -webkit-transition: top 1s ease; transition: top 1s ease; background: #fff; }
+.effectCon .eList:nth-of-type(3n) { margin-right: 0; }
+.eList .eBd { width: 262px; height: 232px; position: relative; overflow: hidden; background: #000; }
+.eList .eBd .overlayImg { z-index: 2; }
+.eList .eHd { width: 100%; height: 96px; }
+.eList .eHd h6 { font-size: 16px; color: #666; line-height: 36px; font-weight:600; }
+.eList .eHd span { font-size: 14px; color: #9e9e9e; padding-left: 66px; position: relative; }
+.eHd span:before, .eHd span:after { position: absolute; content: ''; top: 0; }
+.eList .eHd .expert:before { width: 18px; height: 18px; background: url("../images/exp.jpg") no-repeat center; left: 0; top: 2px; }
+.eList .eHd .expert:after { content: '医生 : '; left: 27px; }
+.eList .eHd .price { padding-left: 68px; position: relative; }
+.eList .eHd .price:before { width: 19px; height: 19px; background: url("../images/pri.jpg") no-repeat center; left: 26px; top: -3px; }
+.eList .eHd .price:after { content: '￥'; left: 55px; top: -1px; }

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>页面找不到啦！</title>
+<style>
+	*{padding:0;margin:0}
+	body {font: 12px/1.5 "微软雅黑", Verdana, Geneva, sans-serif, tahoma, Srial, helvetica, sans-serif;}
+	.errorBox {position:relative;}
+	.errorGirl {position:absolute;top:14%;left:50%;margin-left:-25%;}
+	.errorInfo {position:absolute;right:50%;top:22%;display:inline;margin-right:-25%;}
+	.logo {width:100%;margin:0 auto;}
+	.errorInfo p {font-size:40px;text-align:center;line-height:2}
+	.tishi {width:100%;font-size:20px; letter-spacing:1px;color:#2e3642;text-align:center;}
+	.errorInfo a {display:block;width:198px;height:56px;line-height:56px;border:1px solid #39414c;-moz-border-radius:28px;-webkit-border-radius:28px;border-radius:28px;color:#2e3642;text-align:center;font-size:18px;text-decoration:none;margin:0 auto;-moz-transition:all 0.3s linear 0s;-webkit-transition:all 0.3s linear 0s;transition:all 0.3s linear 0s;margin-top:30px;}
+	.errorInfo a:hover { background-color:#39414c;color:#fff;text-decoration:none;}
+</style>
+</head>
+
+<body>
+	<div class="errorBox">
+    	<div class="errorGirl"><img src="/errorImages/errorGirl.jpg" width="100%"/></div>
+        <div class="errorInfo">
+        	<div class="logo"><img src="/errorImages/errorLogo.jpg" width="100%" /></div>
+            <p>您访问的页面发生错误</p>
+            <div class="tishi">页面错误0<span>5</span>秒返回首页...</div>
+            <a href="/" title="立即返回">立即返回</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://www.shhuamei.cn/js/jquery-1.9.1.min.js"></script>
+<script>
+	$(function(){
+			var timer = null;
+			var counter = 5;
+			var scaleRation = 0.75;//图像高度跟屏幕高度的比例
+			var windowInfo={w:0,h:0,scale:0};
+			function getWindowInfo(){
+					windowInfo.w = $(window).width();
+					windowInfo.h = $(window).height();
+					windowInfo.scale = $(window).height()/$(window).width();
+				};
+			getWindowInfo();			
+			function setWindow(){
+					var errorGirlHeight = parseInt(windowInfo.h*scaleRation,10);
+					var errorInfoW = parseInt(windowInfo.h*0.52,10);
+					var errorGirlWidth = parseInt(errorGirlHeight*0.5,10);
+					$(".errorGirl").stop().animate({width:errorGirlWidth,height:errorGirlHeight},600,function(){
+							if(windowInfo.w<=980){
+							$(this).fadeOut();
+						}else{
+								$(this).fadeIn()
+							}
+						});
+					$(".errorBox").stop().animate({width:windowInfo.w,height:windowInfo.h,overflow:'hidden'},600);
+					$(".errorInfo").find(".logo").stop().animate({"width":errorInfoW},600)
+				};
+			setWindow();
+			$(window).resize(function(e) {
+                getWindowInfo();
+				setWindow();
+            });
+		function init(){
+				counter--;
+				if(counter<=0){
+					clearInterval(timer);
+					window.location="/";
+					}
+				$(".tishi").find("span").html(counter);
+			}
+		timer = setInterval(init,1000);
+		})
+</script>
+</body>
+</html>

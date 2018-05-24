@@ -1,0 +1,214 @@
+/*华美搜索*/
+.contrastBanner, .contrastBanner .bannerSlide { height: 322px; }
+.contrastBanner .bannerSlide li img { -moz-transform: none; -ms-transform: none; -o-transform: none; -webkit-transform: none; transform: none; }
+
+/*------右侧内容---------*/
+.contentRight { width: 880px; }
+.contrastContent{padding-bottom: 80px;}
+/*------当前位置---------*/
+.contentRight .item { position: absolute; top: 10px; left: 0px; font-size: 14px; color: #000; }
+.contentRight .item a { color: #000 }
+.contentRight .item a:last-child { color: #000; }
+/*------导航栏---------*/
+.contentRight .anliTitle { width: 100%; height: 145px; background: url("../images/case_img.png")right no-repeat; }
+.contentRight .anliTitle h3 { width: 665px; font-size: 32px; color: #3d3f4b; border-bottom: 1px solid #e1e1e1; padding-top: 40px; line-height: 52px;}
+.contentRight .anliTitle p { font-size: 16px; color: #666; line-height: 38px; }
+.contentRight .anli-font{margin-top: 15px;}
+.contentRight .anli-font .tb{font-size: 18px;line-height: 24px;border-right: 1px solid #626262;display: inline-block;padding-right: 8px;float: left;overflow: hidden;}
+.contentRight .anli-font .jz{font-size: 24px;display: inline-block;line-height: 46px;float: left;overflow: hidden;margin-left: 8px;}
+.contentRight .anliCon .fonts { font-size: 14px; color: #666; line-height: 30px; }
+.contentRight .anliCon .hd { width: 100%; height: 75px; }
+.contentRight .anliCon .hd li { width: 110px; height: 34px; float: left; border-left: 1px solid #cfcfcf; border-right: 1px solid #cfcfcf; line-height: 34px; text-align: center; background: #e1e1e1; position: relative; }
+.contentRight .anliCon .hd li:first-child { border-left-color: #e1e1e1; }
+.contentRight .anliCon .hd li:last-child { border-right-color: #e1e1e1; }
+.contentRight .anliCon .hd li.on:before { position: absolute; content: ''; width: 6px; height: 3px; background: url("../images/arr1.png")no-repeat center; left: 38px; bottom: -3px; }
+.contentRight .anliCon .hd li.on { background: #3d3f4b; border-color: #3d3f4b; }
+.contentRight .anliCon .hd li.on a { color: #fff; }
+.contentRight .anliCon .hd li a { font-size: 16px; color: #666; }
+/*------案例内容---------*/
+.anliCon{margin-top: 20px;}
+.contentRight .anliCon .bd .bdWrap { width: 880px; height: 710px; }
+.bdWrap .scroll{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bdWrap .scroll .scrollNav{
+    width: 32px;
+    float: left;
+    position: relative;
+    height: 277px;
+}
+.bdWrap .scroll .scrollNav .navItem{
+    width: 100%;
+    height: 224px;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    overflow: hidden;
+}
+.bdWrap .scroll .scrollNav .navItem ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 666px;
+}
+.bdWrap .scroll .scrollNav li{
+    width: 32px;
+    height: 26px;
+    border:1px solid #e1e1e1;
+    text-align: center;
+    font-size: 14px;
+    margin-top: -1px;
+}
+.bdWrap .scroll .scrollNav li a{
+    line-height: 26px;
+    display: block;
+    color: #666;
+}
+.bdWrap .scroll .scrollNav li.on{
+    background: #292b37;
+    border-color: #292b37;
+
+}
+.bdWrap .scroll .scrollNav li.on a{
+    color: #fff;
+}
+.bdWrap .scroll .scrollNav .prev,.bdWrap .scroll .scrollNav .next{
+    display: block;
+    width: 32px;
+    height: 26px;
+    overflow: hidden;
+    background: url("../images/prev.jpg")no-repeat center;
+    position: absolute;
+    left: 0;
+}
+.bdWrap .scroll .scrollNav .next{
+    background: url("../images/next.jpg")no-repeat center;
+    bottom: 0;
+
+}
+
+.bdWrap .scroll .scrollCon{
+    width: 822px!important;
+    float: right;
+    height: 100%!important;
+    overflow: hidden;
+}
+.bdWrap .scroll .scrollCon .main{
+    width: 100%!important;
+    height: 100%!important;
+}
+.bdWrap .scroll .scrollCon .main .foucs{
+    width: 100%;
+    height: 507px;
+    overflow: hidden;
+}
+.bdWrap .scroll .scrollCon .main .foucs a.iframe::after{
+    content:'';
+	position:absolute;
+	left:50%;
+	top:35%;
+	width:50px;
+	height:50px;
+	margin-left:-25px;
+	margin-top:-25px;
+	background:url(/pinpai_new/images/icon.png) no-repeat -14px -131px;
+}
+
+.bdWrap .scroll .scrollCon .main .foucs .foucsHd{
+    width: 55px;
+    float: left;
+}
+.bdWrap .scroll .scrollCon .main .foucs .foucsHd li{
+    width: 100%;
+    height: 40px;
+    background: #3d3f4b;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 1px;
+    position: relative;
+}
+.bdWrap .scroll .scrollCon .main .foucs .foucsHd li.on{
+    background: #fe3509;
+}
+.bdWrap .scroll .scrollCon .main .foucs .foucsHd li.on:before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    background: url("../images/arr2.png")no-repeat center;
+    right: -4px;
+    top: 16px;
+}
+.bdWrap .scroll .scrollCon .main .foucs .foucsHd li a{
+    color: #fff;
+    font-size: 20px;
+}
+.bdWrap .scroll .scrollCon .main .foucs .foucsBd{
+    width: 758px;
+    height: 507px;
+    overflow: hidden;
+    float: right;
+}
+.bdWrap .scroll .scrollCon .main .foucs .foucsBd ul{
+    height: 100%;
+}
+.bdWrap .scroll .scrollCon .main .foucs .foucsBd ul li{
+    width: 758px;
+    height: 507px;
+    overflow: hidden;
+}
+.bdWrap .scroll .scrollCon .main .info{
+    height: 200px;
+    padding: 30px 0 0 65px;
+}
+.bdWrap .scroll .scrollCon .main .info dt{
+    width: 157px;
+    height: 104px;
+    overflow: hidden;
+    float: left;
+}
+.bdWrap .scroll .scrollCon .main .info dd{
+    float: right;
+    width: 570px;
+}
+.bdWrap .scroll .scrollCon .main .info dd span{
+    display:block;
+    font-size: 14px;
+    color: #666;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.bdWrap .scroll .scrollCon .main .info dd p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    margin-top: 15px;
+}
+    /*------联系方式---------*/
+.contentRight .contact { width: 100%; height: 220px; margin-bottom: 70px; }
+.contentRight .contact li { width: 220px; height: 220px; border: 1px solid #e1e1e1; border-top-color: #3d3f4b; float: left; margin-right: -1px; -webkit-transition: all 0.2s linear 0s; transition: all 0.2s linear 0s; }
+.contentRight .contact li a { display: block; background: url("../images/icons.png")no-repeat -6px -12px; width: 102px; height: 106px; margin: 55px auto 0; }
+.contentRight .contact li:nth-of-type(2) a { width: 103px; height: 105px; background-position: -127px -13px; }
+.contentRight .contact li:nth-of-type(3) a { margin: 62px auto 0; width: 103px; height: 100px; background-position: -251px -18px; }
+.contentRight .contact li:nth-of-type(4) a { margin: 52px auto 0; width: 103px; height: 110px; background-position: -373px -8px; }
+.contentRight .contact li:hover { border: #fe3509; background: #fe3509; }
+.contentRight .contact li:hover a { background-position: -6px -151px; }
+.contentRight .contact li:nth-of-type(2):hover a { background-position: -127px -152px; }
+.contentRight .contact li:nth-of-type(3):hover a { background-position: -251px -157px; }
+.contentRight .contact li:nth-of-type(4):hover a { background-position: -373px -147px; }
+
+
+.contentRight .anliCon .bd .bdWrap .list .cust h6{height: 63px;line-height: 63px;font-size: 22px;padding-left: 68px;}
+.contentRight .anliCon .bd .bdWrap .list .cust h6 span{width:63PX;height:63px;}
+.contentRight .anliCon .bd .bdWrap .list .cust span{font-size: 18px;line-height: 24px;}
+.contentRight .anliCon .bd .bdWrap .list .intro p{font-size: 16px;line-height: 22px;}
+.contentRight .anliCon .bd .bdWrap .list .intro ol li{font-size: 16px;height:40px;line-height: 40px;float: left;width:33%;}
+.contentRight .anliCon .bd .bdWrap .list .intro ol li:nth-child(1){background: url(../images/anliCon_view.png) no-repeat 5px 13px;padding-left: 27px;}
+.contentRight .anliCon .bd .bdWrap .list .intro ol li:nth-child(2){background: url(../images/anliCon_msg.png) no-repeat 10px 13px;padding-left: 30px;}
+.contentRight .anliCon .bd .bdWrap .list .intro ol li:nth-child(3){background: url(../images/anliCon_praise.png) no-repeat 10px 10px;padding-left: 32px;}
+.contentRight .anliCon .diary_btn{display: inline-block;width:144px;height: 34px;line-height:34px;font-size:16px;background-color:#d4ab55;color:#fff;padding: 0 8px;}
+.contentRight .anliTitle div.fonts{font-size: 18px;line-height: 20px;border-right: 1px solid #626262;padding-right: 5px;margin-top: 5px;}
+.contentRight .anliCon .hd li{width: 110px;height: 50px;line-height: 50px;}
+.contentRight .anliCon .hd li a{line-height: 50px;}
